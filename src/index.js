@@ -100,11 +100,26 @@ export {default as ChoroplethLayer64} from './deprecated-layers/choropleth-layer
 export {default as ExtrudedChoroplethLayer64} from './deprecated-layers/extruded-choropleth-layer-64/extruded-choropleth-layer-64';
 
 //
+// EXPERIMENTAL LAYERS PACKAGE
+//
+
+import {default as MeshLayer} from './experimental-layers/mesh-layer/mesh-layer';
+import {default as PathMarkerLayer}
+  from './experimental-layers/path-marker-layer/path-marker-layer';
+import {default as PathOutlineLayer}
+  from './experimental-layers/path-outline-layer/path-outline-layer';
+
+Object.assign(experimental, {
+  MeshLayer,
+  PathMarkerLayer,
+  PathOutlineLayer
+});
+
+//
 // EFFECTS PACKAGE
 //
 
 import {default as ReflectionEffect} from './effects/experimental/reflection-effect/reflection-effect';
-
 Object.assign(experimental, {
   ReflectionEffect
 });
